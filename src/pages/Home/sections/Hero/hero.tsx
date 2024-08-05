@@ -7,19 +7,26 @@ import DownloadIcon from '@mui/icons-material/Download';
 import theme from '../../../../theme';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
 import { AnimatedBackground } from "../../../../components/StyledButton/AnimatedBackground/AnimatedBackground";
+import { Redo } from "@mui/icons-material";
 
 
 
 const Hero = () => {
-  const StyleHero = styled("div")(() => ({
+  const StyleHero = styled('div')(() => ({
     backgroundColor: theme.palette.primary.main,
-    height: "100vh",
-    display: "flex",
-    alignItems: "center"
-  }))
+    height: '100vh',
+    display: 'flex',
+    alignItems: 'center',
+    [theme.breakpoints.up('xs')]: {
+      paddingTop: '100%'
+    },
+    [theme.breakpoints.up('md')]: {
+      paddingTop: '0'
+    }
+  }));
 
   const StyledImg = styled("img")(() => ({
-    width: "80%",
+    width: "75%",
     borderRadius: "50%",
     border: `1px solid ${theme.palette.primary.contrastText}`,
 
