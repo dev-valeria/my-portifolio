@@ -5,33 +5,6 @@ interface StyledButtonProps {
   children: React.ReactNode;
   onClick?: () => void;
 }
-
-const StyledButtonExperience = styled('button')(({ theme }) => ({
-  backgroundColor: "transparent",
-  border: `1px solid ${theme.palette.primary.main}`,
-  width: "177px",
-  height: "115px",
-  color: theme.palette.primary.main,
-  '&:hover': {
-    backgroundColor: theme.palette.secondary.light,
-  },
-}));
-
-const StyledButtonEducation = styled('button')(({ theme }) => ({
-  backgroundColor: "transparent",
-  border: `1px solid ${theme.palette.primary.main}`, 
-  width: "177px",
-  height: "115px",
-  color: theme.palette.primary.main,
-  alignItems: "center",
-  justifyContent: "center",
-  
-  '&:hover': {
-    backgroundColor: theme.palette.secondary.light,
-  },
-}));
-
-
 const StyledButtonDefault = styled('button')(({ theme }) => ({
   backgroundColor: "transparent",
   border: `1px solid ${theme.palette.primary.contrastText}`,
@@ -48,7 +21,6 @@ const StyledButtonDefault = styled('button')(({ theme }) => ({
   },
 }));
 
-
 const StyledButtonDefaultComponent: React.FC<StyledButtonProps> = ({ children, onClick }) => {
   return (
     <StyledButtonDefault onClick={onClick}>
@@ -56,22 +28,5 @@ const StyledButtonDefaultComponent: React.FC<StyledButtonProps> = ({ children, o
     </StyledButtonDefault>
   );
 };
-
-const StyledButtonEducationComponent: React.FC<StyledButtonProps> = ({ children, onClick }) => {
-  return (
-    <StyledButtonEducation onClick={onClick}>
-      {children}
-    </StyledButtonEducation>
-  );
-};
-
-const StyledButtonExperienceComponent: React.FC<StyledButtonProps> = ({ children, onClick }) => {
-  return (
-    <StyledButtonExperience onClick={onClick}>
-      {children}
-    </StyledButtonExperience>
-  );
-};
-
-export { StyledButtonDefaultComponent as StyledButtonDefault, StyledButtonExperienceComponent as StyledButtonExperience, StyledButtonEducationComponent as StyledButtonEducation };
+export { StyledButtonDefaultComponent as StyledButtonDefault };
 
