@@ -6,6 +6,7 @@ import { AnimatedBackground } from "../../../../components/StyledButton/Animated
 import theme from "../../../../theme";
 import { StyledButtonDefault } from "../../../../components/StyledButton/StyledButton";
 import AboutMe from "../About/AboutMe";
+import SkillsIcons from "../SkillsIcons/SkillsIcons";
 
 const Hero = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
@@ -90,6 +91,7 @@ const Hero = () => {
     </Container>
       </StyledHero >
       <AboutMe />
+      <SkillsIcons />
     </>
 
   );

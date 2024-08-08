@@ -1,6 +1,7 @@
 import NavBar from "../../components/NavBar/NavBar"
 import AboutMe from "./sections/About/AboutMe"
 import Hero from "./sections/Hero/hero"
+import SkillsIcons from "./sections/SkillsIcons/SkillsIcons"
 
 const  Home = () => {
 
@@ -9,6 +10,7 @@ const  Home = () => {
        <NavBar/>
       <Hero />
       <AboutMe />
+      <SkillsIcons />
      
     </>
   )
