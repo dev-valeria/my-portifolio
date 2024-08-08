@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar/NavBar"
 import AboutMe from './pages/Home/sections/About/AboutMe';
 import Hero from './pages/Home/sections/Hero/hero';
 import SkillsIcons from "./pages/Home/sections/SkillsIcons/SkillsIcons";
+import Projects from './pages/Home/sections/Projects/projects';
 
 const App = () => {
 
@@ -14,6 +15,7 @@ const App = () => {
       <Routes>
         <Route path="/about" element={<AboutMe />} />
         <Route path="/skills" element={<SkillsIcons />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </Router>
     

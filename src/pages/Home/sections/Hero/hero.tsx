@@ -7,6 +7,7 @@ import theme from "../../../../theme";
 import { StyledButtonDefault } from "../../../../components/StyledButton/StyledButton";
 import AboutMe from "../About/AboutMe";
 import SkillsIcons from "../SkillsIcons/SkillsIcons";
+import Projects from "../Projects/projects";
 
 const Hero = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
@@ -43,7 +44,6 @@ const Hero = () => {
     <>
          <StyledHero>
     <Container maxWidth="lg">
-    
         <Grid container spacing={2}>
           <Grid item xs={12} md={5}>
             <Box position="relative">
@@ -92,6 +92,7 @@ const Hero = () => {
       </StyledHero >
       <AboutMe />
       <SkillsIcons />
+      <Projects />
     </>
 
   );
