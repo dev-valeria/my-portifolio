@@ -5,6 +5,7 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import { AnimatedBackground } from "../../../../components/StyledButton/AnimatedBackground/AnimatedBackground";
 import theme from "../../../../theme";
 import { StyledButtonDefault } from "../../../../components/StyledButton/StyledButton";
+import AboutMe from "../About/AboutMe";
 
 const Hero = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
@@ -88,6 +89,7 @@ const Hero = () => {
         </Grid>
     </Container>
       </StyledHero >
+      <AboutMe />
     </>
 
   );
