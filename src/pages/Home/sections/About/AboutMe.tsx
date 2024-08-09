@@ -58,7 +58,7 @@ const AboutMe = () => {
   };
 
   return (
-    <Container maxWidth="lg" id="about" sx={{ pt: 2, backgroundColor: 'white', color: 'black' }}>
+    <Container maxWidth="lg" id="about" sx={{ pt: 2, backgroundColor: 'white', color: 'black', mb: 5 }}>
       <Box display="flex" justifyContent="flex-end" mb={2}>
         <Select
         value={language}
@@ -84,7 +84,7 @@ const AboutMe = () => {
           <MenuItem value="en"><StyledImg src={ estadosUnidos } alt="US Flag" /></MenuItem>
         </Select>
         </Box>
-      <Typography variant="h2" textAlign="center" gutterBottom>
+      <Typography variant="h1" textAlign="center" gutterBottom>
         {content[language].title}
       </Typography>
        <Box display="flex" justifyContent="center" mt={2}>
@@ -114,9 +114,6 @@ const AboutMe = () => {
       <Box mb={5} mt={5}>
         <Typography variant="body1"  sx={{ 
     textAlign: 'justify', 
-    borderBottom: '1px solid', 
-    borderColor: 'divider', 
-    pb: 5, 
     lineHeight: 1.6, 
     letterSpacing: '0.02em',
     fontWeight: 400,
