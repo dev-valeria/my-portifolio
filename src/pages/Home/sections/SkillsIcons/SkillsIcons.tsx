@@ -1,4 +1,5 @@
-import { Container, Grid, Typography, Box, styled,  keyframes } from '@mui/material';
+import { Container, Typography, Box, styled, keyframes } from '@mui/material';
+import { t } from 'i18next';
 
 // Dados das habilidades
 const skillsData = [
@@ -30,42 +31,37 @@ const fadeInAndScaleUp = keyframes`
 
 // Estilos para a imagem do ícone
 const IconImage = styled('img')(({ theme }) => ({
-  width: '60px',
+  width: '30px', // Aumentando o tamanho do ícone
   height: 'auto',
-  marginBottom: theme.spacing(2),
+  margin: theme.spacing(4), // Ajustando o espaçamento
 }));
 
 // Estilos para o contêiner de habilidades
 const SkillBox = styled(Box)(({ theme }) => ({
   textAlign: 'center',
-  py: 2,
+  py: 2, // Aumentando o padding vertical
   backgroundColor: '#fff',
   borderRadius: '8px',
   boxShadow: theme.shadows[1],
   animation: `${fadeInAndScaleUp} 1s ease-out`,
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
 }));
 
 const SkillsIcons = () => {
   return (
     <Container maxWidth="lg" id="skills" sx={{ pt: 4, pb: 6, backgroundColor: '#f5f5f5', mb: 8 }}>
-      <Typography variant="h1" align="center" gutterBottom>
-          Skills
-        </Typography>
-      <Grid container spacing={3} justifyContent="center">
+      <Typography variant="h2" align="center" gutterBottom>
+        {t('skillsList.title')}
+      </Typography>
+      <Box display="flex" flexWrap="wrap" justifyContent="center">
         {skillsData.map((skill, index) => (
-          <Grid item xs={2} sm={2} md={2} lg={2} xl={2}  key={index}>
-            <SkillBox
-              display="flex"
-              flexDirection="column"
-              alignItems="center"
-              justifyContent="center"
-            >
-              <IconImage src={skill.icon.props.src} alt={skill.icon.props.alt} />
-              <Typography variant="h6" sx={{ mb: 2 }}>{skill.icon.props.alt}</Typography>
-            </SkillBox>
-          </Grid>
+          <SkillBox key={index}>
+            <IconImage src={skill.icon.props.src} alt={skill.icon.props.alt} />
+          </SkillBox>
         ))}
-      </Grid>
+      </Box>
     </Container>
   );
 };
