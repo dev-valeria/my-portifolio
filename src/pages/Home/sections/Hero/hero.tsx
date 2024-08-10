@@ -8,6 +8,7 @@ import { StyledButtonDefault } from "../../../../components/StyledButton/StyledB
 import AboutMe from "../About/AboutMe";
 import SkillsIcons from "../SkillsIcons/SkillsIcons";
 import Projects from "../Projects/projects";
+import { useTranslation } from 'react-i18next';
 
 // Estilos para a seção Hero
 const StyledHero = styled('div')(({ theme }) => ({
@@ -24,6 +25,7 @@ const StyledImg = styled("img")(({ theme }) => ({
 }));
 
 const Hero = () => {
+  const { t } = useTranslation();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   const handleContactClick = () => {
@@ -50,7 +52,7 @@ const Hero = () => {
                   <AnimatedBackground />
                 </Box>
                 <Box position="relative" textAlign="center">
-                  <StyledImg src={Avatar} alt="Valeria Melo" />
+                  <StyledImg src={Avatar} alt={t('hero.avatarAlt')} />
                 </Box>
               </Box>
             </Grid>
@@ -61,18 +63,18 @@ const Hero = () => {
                 pl: { xs: '63px !important', md: '63px !important' }
               }}
             >
-              <Typography color="primary.contrastText" variant="h2" textAlign="center" pb={2}>
-                Valeria Melo
+              <Typography color="primary.contrastText" variant="h3" textAlign="center" pb={2}>
+                {t('hero.title')}
               </Typography>
-              <Typography color="primary.contrastText" variant={isMobile ? 'h5' : 'h3'} textAlign="center">
-                I'm a Software Engineer
+              <Typography color="primary.contrastText" variant={isMobile ? 'h5' : 'h4'} textAlign="center">
+                {t('hero.subtitle')}
               </Typography>
               <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
                   <StyledButtonDefault onClick={handleDownloadClick}>
                     <DownloadIcon />
                     <Typography fontSize={14} sx={{ ml: 1 }}>
-                      Download CV
+                      {t('hero.downloadCV')}
                     </Typography>
                   </StyledButtonDefault>
                 </Grid>
@@ -80,7 +82,7 @@ const Hero = () => {
                   <StyledButtonDefault onClick={handleContactClick}>
                     <MailOutlineIcon />
                     <Typography fontSize={14} sx={{ ml: 1 }}>
-                      Contact me
+                      {t('hero.contactMe')}
                     </Typography>
                   </StyledButtonDefault>
                 </Grid>
