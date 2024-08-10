@@ -1,6 +1,7 @@
 import { Box, Container, Typography, Button, Grid, Card, CardContent, CardMedia } from '@mui/material';
 import { styled } from '@mui/system';
 import { motion } from 'framer-motion';
+import { t } from 'i18next';
 
 
 const Background = styled('div')({
@@ -42,12 +43,13 @@ const Projects = () => {
       codeLink: '#',
     },
   ];
+  
 
   return (
     <Background>
-      <Container id="projects">
-        <Typography variant="h1" align="center" gutterBottom>
-          Projects
+      <Container id="projectsSection">
+        <Typography variant="h2" align="center" gutterBottom>
+          {t('projects.title')}
         </Typography>
         <Grid container spacing={4} justifyContent="center">
           {projects.map((project, index) => (
@@ -65,23 +67,23 @@ const Projects = () => {
                 />
                 <CardContent>
                   <Typography variant="h5" gutterBottom>
-                    {project.title}
+                    {t(`projects.projectsList.${index}.title`)}
                   </Typography>
                   <Typography variant="subtitle1">
-                    {project.startDate} - {project.endDate}
+                {t(`projects.projectsList.${index}.startDate`)} - {t(`projects.projectsList.${index}.endDate`)}
                   </Typography>
                   <Typography variant="body1" paragraph>
-                    {project.description}
+                   {t(`projects.projectsList.${index}.description`)}
                   </Typography>
                   <Typography variant="body2" paragraph>
-                    <strong>Technologies:</strong> {project.technologies}
+                    {t('projects.technologies')}: {t(`projects.projectsList.${index}.technologies`)}
                   </Typography>
                   <Box display="flex" justifyContent="space-between" mt={2}>
                     <Button variant="contained" color="primary" href={project.projectLink} target="_blank">
-                      View Project
+                      {t('projects.viewProject')}
                     </Button>
                     <Button variant="outlined" color="secondary" href={project.codeLink} target="_blank">
-                      View Code
+                      {t('projects.viewCode')}
                     </Button>
                   </Box>
                 </CardContent>
