@@ -1,0 +1,48 @@
+{
+  "about": "Acerca de",
+  "skills": "Habilidades",
+  "projectsSection": "Proyectos",
+  "hero": {
+    "title": "Valeria Melo",
+    "subtitle": "Soy Ingeniera de Software",
+    "downloadCV": "Descargar CV",
+    "contactMe": "Contáctame",
+    "avatarAlt": "Valeria Melo"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "viewProject": "Ver Proyecto",
+    "viewCode": "Ver Código",
+    "technologies": "Tecnologías",
+    "projectsList": [
+      {
+        "title": "Proyecto 1",
+        "startDate": "Enero 2023",
+        "endDate": "Marzo 2023",
+        "description": "Descripción del Proyecto 1",
+        "technologies": "React, Node.js, Express"
+      },
+      {
+        "title": "Proyecto 2",
+        "startDate": "Abril 2023",
+        "endDate": "Julio 2023",
+        "description": "Descripción del Proyecto 2",
+        "technologies": "Angular, Firebase, Material UI"
+      }
+    ]
+  },
+  "aboutMe": {
+    "title": "Sobre Mí",
+    "education": "Educación",
+    "experience": "Experiencia",
+    "years": "5+ Años",
+    "development": "Desarrollo FrontEnd",
+    "course": "Informática Empresarial",
+    "description": "Soy una desarrolladora Front-end apasionada con más de 5 años de experiencia en la creación de interfaces de usuario intuitivas y dinámicas. Mi trayectoria en el desarrollo de software ha estado impulsada por el compromiso de aprovechar las tecnologías más avanzadas y crear experiencias de usuario perfectas.\n\nCon una sólida experiencia en el sector financiero, he perfeccionado mis habilidades en el diseño e implementación de soluciones innovadoras que equilibran funcionalidad y estética. Me encanta enfrentar desafíos complejos y ofrecer resultados de alta calidad que se alineen con los objetivos comerciales y las aspiraciones personales.\n\nAbordo cada proyecto con creatividad y precisión, siempre con el objetivo de construir conexiones duraderas y contribuir al éxito del equipo y la organización. Mi experiencia abarca diversas herramientas y frameworks, y siempre estoy ansiosa por explorar nuevas tecnologías y metodologías para mantenerme a la vanguardia en el cambiante panorama tecnológico."
+  },
+  "skillsList": {
+    "title": "Habilidades"
+  }
+}
+
+

@@ -1,0 +1,51 @@
+{
+  "about": "About",
+  "skills": "Skills",
+  "projectsSection": "Projects",
+  "hero": {
+    "title": "Valeria Melo",
+    "subtitle": "I'm a Software Engineer",
+    "downloadCV": "Download CV",
+    "contactMe": "Contact me",
+    "avatarAlt": "Valeria Melo"
+  },
+  "projects": {
+    "title": "Projects",
+    "viewProject": "View Project",
+    "viewCode": "View Code",
+    "technologies": "Technologies",
+    "projectsList": [
+      {
+        "title": "Project 1",
+        "startDate": "January 2023",
+        "endDate": "March 2023",
+        "description": "Description of Project 1",
+        "technologies": "React, Node.js, Express"
+      },
+      {
+        "title": "Project 2",
+        "startDate": "April 2023",
+        "endDate": "July 2023",
+        "description": "Description of Project 2",
+        "technologies": "Angular, Firebase, Material UI"
+      }
+    ]
+  },
+  "aboutMe": {
+    "title": "About Me",
+    "education": "Education",
+    "experience": "Experience",
+    "years": "5+ Years",
+    "development": "FrontEnd Development",
+    "course": "Business Informatics",
+    "description": "I'm a passionate Front-end developer with over 5 years of experience in crafting intuitive and dynamic user interfaces. My journey in software development has been driven by a commitment to leveraging cutting-edge technologies and creating seamless user experiences.\n\nWith a strong background in the financial sector, I've honed my skills in designing and implementing innovative solutions that balance functionality and aesthetics. I thrive on tackling complex challenges and delivering high-quality results that align with both business goals and personal aspirations.\n\nI approach each project with creativity and precision, always aiming to build lasting connections and contribute to the success of the team and the organization. My expertise spans across various tools and frameworks, and I’m always eager to explore new technologies and methodologies to stay ahead in the ever-evolving tech landscape."
+  },
+  "skillsList": {
+    "title": "Skills"
+  }
+}
+
+
+
+
+

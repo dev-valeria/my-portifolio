@@ -1,0 +1,47 @@
+{
+  "about": "Sobre",
+  "skills": "Habilidades",
+  "projectsSection": "Projetos",
+  "hero": {
+    "title": "Valeria Melo",
+    "subtitle": "Sou Engenheira de Software",
+    "downloadCV": "Baixar CV",
+    "contactMe": "Contate-me",
+    "avatarAlt": "Valeria Melo"
+  },
+  "projects": {
+    "title": "Projetos",
+    "viewProject": "Ver Projeto",
+    "viewCode": "Ver Código",
+    "technologies": "Tecnologias",
+    "projectsList": [
+      {
+        "title": "Projeto 1",
+        "startDate": "Janeiro 2023",
+        "endDate": "Março 2023",
+        "description": "Descrição do Projeto 1",
+        "technologies": "React, Node.js, Express"
+      },
+      {
+        "title": "Projeto 2",
+        "startDate": "Abril 2023",
+        "endDate": "Julho 2023",
+        "description": "Descrição do Projeto 2",
+        "technologies": "Angular, Firebase, Material UI"
+      }
+    ]
+  },
+  "aboutMe": {
+    "title": "Sobre Mim",
+    "education": "Educação",
+    "experience": "Experiência",
+    "years": "5+ Anos",
+    "development": "Desenvolvimento FrontEnd",
+    "course": "Informática para Negócios",
+    "description": "Sou uma desenvolvedora Front-end apaixonada com mais de 5 anos de experiência em criar interfaces de usuário intuitivas e dinâmicas. Minha jornada no desenvolvimento de software tem sido impulsionada pelo compromisso de utilizar tecnologias de ponta e criar experiências de usuário perfeitas.\n\nCom um forte background no setor financeiro, refinei minhas habilidades em projetar e implementar soluções inovadoras que equilibram funcionalidade e estética. Adoro enfrentar desafios complexos e entregar resultados de alta qualidade que alinhem objetivos de negócios e aspirações pessoais.\n\nAbordo cada projeto com criatividade e precisão, sempre com o objetivo de construir conexões duradouras e contribuir para o sucesso da equipe e da organização. Minha experiência abrange várias ferramentas e frameworks, e estou sempre ansiosa para explorar novas tecnologias e metodologias para me manter à frente no cenário tecnológico em constante evolução."
+  },
+  "skillsList": {
+    "title": "Habilidades"
+  }
+}
+
