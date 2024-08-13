@@ -1,7 +1,7 @@
 
 # Portfolio - Valeria Melo
 
-![Portfolio](path_to_your_image_or_logo.png)
+//![Portfolio](path_to_your_image_or_logo.png)
 
 ## Sobre
 
