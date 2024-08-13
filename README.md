@@ -67,9 +67,42 @@ O projeto suporta múltiplos idiomas utilizando `i18next`. Atualmente, os idioma
 }
 
 
-## Como Rodar o Projeto
+### Como Rodar o Projeto
 
 1. Clone o repositório:
 
    ```bash
    git clone https://github.com/seu-usuario/secret-word-game.git
+
+### Instalação e Execução
+
+1. Clone o repositorio:
+git clone https://github.com/dev-valeria/my-portfolio.git
+cd my-portfolio
+
+2. Instale as dependências:
+npm install
+
+3. Execute o projeto:
+npm start
+
+4. Acesse o projeto no navegador:
+http://localhost:3000
+
+###Contribuição
+
+1. Faça um fork do projeto.
+2. Crie uma branch para a sua feature:
+git checkout -b minha-feature
+
+3. Commit suas mudanças:
+git commit -m 'Minha nova feature'
+
+4. Faça um push para a branch:
+git push origin minha-feature
+
+
+
+
+
+
