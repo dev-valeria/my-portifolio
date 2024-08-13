@@ -67,12 +67,3 @@ O projeto suporta múltiplos idiomas utilizando `i18next`. Atualmente, os idioma
     ]
   }
 }
-
-
-
-
-
-
-
-
-
