@@ -43,7 +43,7 @@ const Hero = () => {
     }
 
     const link = document.createElement('a');
-    link.href = `/path/to/${fileName}`;
+    link.href = `/${fileName}`;
     link.download = `curriculo-valeria-melo${language === 'en' ? '-english' : language === 'es' ? '-spanish' : ''}.pdf`;
     document.body.appendChild(link);
     link.click();
