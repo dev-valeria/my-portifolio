@@ -2,8 +2,6 @@
 
 # Portfolio - Valeria Melo
 
-![Portfolio](path_to_your_image_or_logo.png)
-
 ## Sobre
 
 Este é o meu portfólio como Software Engineer, onde apresento alguns dos projetos em que trabalhei e minhas habilidades técnicas. O portfólio foi desenvolvido utilizando React, Material-UI, e outras tecnologias modernas.
