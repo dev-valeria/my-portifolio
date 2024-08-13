@@ -1,30 +1,44 @@
-# React + TypeScript + Vite
+# Secret Word Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
 
-Currently, two official plugins are available:
+O Secret Word Game é um jogo simples de adivinhação de palavras desenvolvido em React. O objetivo do jogo é adivinhar uma palavra secreta escolhida aleatoriamente a partir de uma lista de palavras. O jogo exibe uma tela inicial, o jogo em si e uma tela de fim de jogo, onde os usuários podem reiniciar o jogo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+- React
+- CSS para estilização
+- Hooks do React (`useState`, `useEffect`, `useCallback`)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Estrutura do Projeto
 
-- Configure the top-level `parserOptions` property like this:
+O projeto é estruturado da seguinte forma:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- `App.js`: Componente principal que gerencia o estado do jogo e renderiza os componentes de tela inicial, jogo e fim de jogo.
+- `components/StartScreen.js`: Componente que exibe a tela inicial do jogo e fornece um botão para iniciar o jogo.
+- `components/Game.js`: Componente que exibe o jogo em si, permitindo ao usuário adivinhar letras e mostrando o progresso.
+- `components/GameOver.js`: Componente que exibe a tela de fim de jogo com a pontuação final e um botão para reiniciar o jogo.
+- `data/words.js`: Arquivo contendo a lista de palavras categorizadas para o jogo.
+- `App.css`: Arquivo de estilo global para a aplicação.
+- `StartScreen.css`: Arquivo de estilo para o componente de tela inicial.
+- `Game.css`: Arquivo de estilo para o componente de jogo.
+- `GameOver.css`: Arquivo de estilo para o componente de fim de jogo.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Funcionamento
+
+1. **Tela Inicial**: O jogo começa com uma tela inicial que apresenta o título e um botão para iniciar o jogo.
+2. **Jogo**: Quando o jogo é iniciado, uma palavra e uma categoria são escolhidas aleatoriamente. O jogador deve adivinhar as letras da palavra. O jogo exibe as letras já adivinhadas, letras erradas e o número de tentativas restantes.
+3. **Tela de Fim de Jogo**: Quando o jogador perde todas as tentativas ou adivinha todas as letras corretamente, a tela de fim de jogo é exibida, mostrando a pontuação final e permitindo reiniciar o jogo.
+
+## Funcionalidades
+
+- **Iniciar o Jogo**: Ao clicar no botão "Começar o jogo", uma nova palavra é escolhida e o jogo é iniciado.
+- **Adivinhar Letras**: O jogador pode adivinhar letras que são verificadas contra a palavra secreta. Letras corretas são adicionadas à lista de letras adivinhadas, e letras erradas reduzem o número de tentativas restantes.
+- **Tela de Fim de Jogo**: Se o jogador adivinha todas as letras corretamente ou fica sem tentativas, o jogo exibe a pontuação final e um botão para reiniciar o jogo.
+
+## Como Rodar o Projeto
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/seu-usuario/secret-word-game.git
