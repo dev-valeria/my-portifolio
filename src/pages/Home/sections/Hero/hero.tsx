@@ -25,7 +25,7 @@ const StyledImg = styled("img")(({ theme }) => ({
 }));
 
 const Hero = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   const handleContactClick = () => {
@@ -33,9 +33,18 @@ const Hero = () => {
   };
 
   const handleDownloadClick = () => {
+    const language = i18n.language;
+    let fileName = 'curriculo.pdf';
+
+    if (language === 'en') {
+      fileName = 'curriculoEnglish.pdf';
+    } else if (language === 'es') {
+      fileName = 'curriculoEspanhol.pdf';
+    }
+
     const link = document.createElement('a');
-    link.href = '/path/to/curriculo.pdf'; 
-    link.download = 'curriculo-valeria-melo.pdf';
+    link.href = `/path/to/${fileName}`;
+    link.download = `curriculo-valeria-melo${language === 'en' ? '-english' : language === 'es' ? '-spanish' : ''}.pdf`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -99,4 +108,5 @@ const Hero = () => {
 }
 
 export default Hero;
+
 

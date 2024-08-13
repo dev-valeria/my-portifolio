@@ -1,27 +1,23 @@
-import { Container, Typography, Box, Select, MenuItem, Button, styled, SelectChangeEvent } from '@mui/material';
+import { Container, Typography, Box, Button } from '@mui/material';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import SchoolIcon from '@mui/icons-material/School';
-import { useTranslation } from 'react-i18next'; // Importar o hook do i18n
-
-
-const StyledImg = styled("img")(({ }) => ({
-  width: '24px',
-  height: 'auto',
-  marginRight: '8px',
-}));
+import { t } from 'i18next';
 
 const AboutMe = () => {
-  const { t, i18n } = useTranslation(); // Hook para acessar o i18n
-
- 
-
   return (
     <Container maxWidth="lg" id="about" sx={{ pt: 2, backgroundColor: 'white', color: 'black', mb: 5 }}>
       <Typography variant="h2" textAlign="center" gutterBottom>
         {t('aboutMe.title')}
       </Typography>
-      <Box display="flex" justifyContent="center" mt={2}>
-        <Button variant="contained" color="primary">
+      <Box display="flex" justifyContent="center" mt={2} gap={2}>
+        <Button 
+          variant="contained" 
+          color="primary" 
+          sx={{ 
+            padding: '6px 12px', // Ajusta o padding para reduzir a altura
+            fontSize: '0.875rem' // Ajusta o tamanho da fonte
+          }}
+        >
           <Typography fontSize={14}>
             <EmojiEventsIcon />
             <br />
@@ -32,7 +28,14 @@ const AboutMe = () => {
             {t('aboutMe.development')}
           </Typography>
         </Button>
-        <Button variant="outlined" color="secondary">
+        <Button 
+          variant="outlined" 
+          color="secondary" 
+          sx={{ 
+            padding: '6px 12px', // Ajusta o padding para reduzir a altura
+            fontSize: '0.875rem' // Ajusta o tamanho da fonte
+          }}
+        >
           <Typography fontSize={14}>
             <SchoolIcon />
             <br />
