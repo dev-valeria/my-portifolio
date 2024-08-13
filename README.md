@@ -1,35 +1,36 @@
 
-
 # Portfolio - Valeria Melo
+
+![Portfolio](path_to_your_image_or_logo.png)
 
 ## Sobre
 
-Este é o meu portfólio como Software Engineer, onde apresento alguns dos projetos em que trabalhei e minhas habilidades técnicas. O portfólio foi desenvolvido utilizando React, Material-UI, e outras tecnologias modernas.
+Este é o meu portfólio como Software Engineer, onde apresento alguns dos projetos em que trabalhei e minhas habilidades técnicas. O portfólio foi desenvolvido utilizando **React**, **Material-UI**, e outras tecnologias modernas.
 
 ## Tecnologias Utilizadas
 
-- **React** - Biblioteca JavaScript para construção de interfaces de usuário.
-- **Material-UI** - Biblioteca de componentes React que implementa o design do Google Material.
-- **Framer Motion** - Biblioteca para animações em React.
-- **i18next** - Framework de internacionalização para aplicações web.
-- **Styled Components** - Utilizado para estilização dos componentes.
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **Material-UI**: Biblioteca de componentes React que implementa o design do Google Material.
+- **Framer Motion**: Biblioteca para animações em React.
+- **i18next**: Framework de internacionalização para aplicações web.
+- **Styled Components**: Utilizado para estilização dos componentes.
 
 ## Estrutura do Projeto
 
-- **Hero Section**: Apresenta uma introdução ao portfólio, com meu nome, título profissional, e botões para download do currículo e contato via email.
-- **About Me**: Seção com uma breve descrição sobre mim e minha trajetória profissional.
+- **Hero Section**: Introdução ao portfólio com meu nome, título profissional, e botões para download do currículo e contato via e-mail.
+- **About Me**: Descrição sobre mim e minha trajetória profissional.
 - **Skills**: Ícones das minhas principais habilidades técnicas.
-- **Projects**: Lista de projetos que desenvolvi, com detalhes como tecnologias utilizadas e links para o código e demonstração.
+- **Projects**: Lista de projetos desenvolvidos, com detalhes sobre as tecnologias utilizadas e links para visualização do código e demonstração.
 
 ## Internacionalização
 
-O projeto suporta múltiplos idiomas utilizando `i18next`. Atualmente, os idiomas suportados são:
+O projeto suporta múltiplos idiomas utilizando `i18next`. Idiomas atualmente suportados:
 
 - **Português**
 - **Inglês**
 - **Espanhol**
 
-### Exemplo de tradução em JSON:
+### Exemplo de Tradução em JSON
 
 ```json
 {
@@ -65,3 +66,4 @@ O projeto suporta múltiplos idiomas utilizando `i18next`. Atualmente, os idioma
     ]
   }
 }
+
