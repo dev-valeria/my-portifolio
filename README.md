@@ -1,7 +1,7 @@
 
 # Portfolio - Valeria Melo
 
-- **Build:** [Producao](https://dev-valeria.github.io/my-portifolio/)
+- **Build:** [https://dev-valeria.github.io/my-portifolio/]
 
 
 ## Sobre
